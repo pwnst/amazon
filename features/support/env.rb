@@ -9,5 +9,6 @@ driver = Selenium::WebDriver.for :firefox
 $main_page = MainPage.new(driver)
 $cart_page = CartPage.new(driver)
 
-#driver quit help function
-$driver_quit = Proc.new { driver.quit() }
+at_exit do
+  driver.quit()
+end

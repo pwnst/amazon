@@ -40,6 +40,5 @@ Then(/^product name in cart list contains Apple iPhone 6$/) do
   products = $cart_page.products_in_cart_list
   products.each do |product|
     expect(product).to include('Apple iPhone 6')
-  $driver_quit.call
   end
 end
