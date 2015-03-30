@@ -8,8 +8,8 @@ class CartPage
     @driver = driver
     @url = 'http://www.amazon.com/gp/cart/view.html'
     @product_names = {css: '.a-size-medium.sc-product-title.a-text-bold'}
-	@non_deleted_items = {css: '.sc-list-body>div:not([data-removed="true"])'}
-	@checkout_button = {css: '#sc-buy-box-ptc-button'}
+    @non_deleted_items = {css: '.sc-list-body>div:not([data-removed="true"])'}
+    @checkout_button = {css: '#sc-buy-box-ptc-button'}
   end
   
   def open
